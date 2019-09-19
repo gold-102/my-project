@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+
+:root {
+    --primaryColor: #f09d51;
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainGrey: #ececec;
+    --mainSpacing: 0.1rem;
+    --mainTransition: all 0.3s linear;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: url('../images/body-bg.jpg')center/cover no-repeat fixed !important;
+    font-family: 'Lobster', cursive;
+}
+#header ul li{display: inline-block !important;padding-left: 30px}
+#header ul li a{color: white;text-decoration: none;font-size: 1.3rem;}
+#header ul li #hover:hover{text-decoration: underline;text-decoration-color: #dc3545;
+    height: 5px !important;}
+.list-unstyled{padding-top: 40px;}
+.mid-block{margin-top: 150px !important;margin-bottom: 115px;}
+.mid-block h1{font-size: 130px;}
+.title-underline{height: 8px; width: 100px;}
+.title-underline-1{height: 8px; width: 350px;}
+#table-menu{font-family: sans-serif;}
+#order{margin-top: 70px;}
+
+
+
+
+
+/*order section*/
+.order-img{
+    position: relative;
+    overflow: hidden;
+}
+
+.bag-btn{
+    position: absolute;
+    visibility: hidden;
+    top: 70%;
+    right: 0;
+    background: var(--primaryColor);
+    border: none;
+    text-transform: uppercase;
+    padding: 0.5rem 0.75rem;
+    letter-spacing: var(--mainSpacing);
+    font-weight: bold;
+    transition: var(--mainTransition);
+    transform: translateX(100%); /*when hovering this btn shows*/
+    cursor: pointer;
+}
+.bag-btn:hover{
+    color: var(--mainWhite);
+}
+.order-img:hover .bag-btn{
+    transform: translateX(0);
+    visibility: visible;
+
+
+}
+/* end of order section*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    #work-img{
+        
+        width: 100%;
+    }
+    #header ul li{display: inline-block !important;padding-left: 10px; }
+    #header ul li a{color: white;text-decoration: none;font-size: 0.6rem}
+    .mid-block h1{font-size: 4rem;}
+}
+
+
+@media (min-width:768px) and (max-width:1024px){
+    #header ul li{display: inline-block !important;padding-left: 20px; }
+    #header ul li a{color: white;text-decoration: none;font-size: 1.1rem}
+    .mid-block h1{font-size: 7rem;}
+}
